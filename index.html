@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rendezvous 2025 • Collaboration Proposal (Golden Jubilee)</title>
+  <meta name="description" content="Rendezvous 2025 (IIT Delhi) Golden Jubilee sponsorship opportunities — scale, audience, branding, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0a0e18; /* Deep navy */
+      --panel:#0f1526; /* Card bg */
+      --muted:#aab0c0;
+      --text:#e7ecf6;
+      --gold:#f4c026;
+      --gold-2:#ffdf86;
+      --accent:#7b5cff; /* royal purple */
+      --accent-2:#2da2ff; /* blue */
+      --ok:#1ec28b;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+      --radius-lg: 28px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,rgba(123,92,255,.25),transparent 60%),
+                                radial-gradient(900px 500px at 10% 0%,rgba(45,162,255,.25),transparent 60%),
+                                var(--bg);
+              color:var(--text);font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;height:auto}
+    .container{width:min(1200px, 92%);margin-inline:auto}
+    .shadow{box-shadow:var(--shadow)}
+    .btn{display:inline-block;padding:14px 22px;border-radius:999px;font-weight:600;letter-spacing:.2px;transition:.25s ease;
+         background: linear-gradient(135deg,var(--gold),var(--accent)); color:#0b0b0b}
+    .btn:hover{transform: translateY(-1px) scale(1.02); filter:saturate(1.1); box-shadow:0 12px 28px rgba(244,192,38,.35)}
+    .btn-outline{background:transparent;border:1.5px solid rgba(255,255,255,.25); color:var(--text)}
+    .btn-outline:hover{border-color:var(--gold); color:var(--gold)}
+    .tag{display:inline-flex;gap:8px;align-items:center;padding:6px 12px;border-radius:999px;font-size:12px;
+         background: linear-gradient(90deg, rgba(244,192,38,.2), rgba(123,92,255,.2)); border:1px solid rgba(255,255,255,.08)}
+    .muted{color:var(--muted)}
+
+    /* NAV */
+    .nav{position:sticky;top:0;z-index:50;background: rgba(10,14,24,.6); backdrop-filter: blur(8px); border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .nav a{font-weight:600; opacity:.9}
+    .nav .links{display:flex;gap:20px;align-items:center}
+    .nav .links a{padding:8px 12px;border-radius:10px}
+    .nav .links a:hover{background:rgba(255,255,255,.06)}
+
+    /* HERO */
+    .hero{position:relative; padding:70px 0 40px}
+    .hero .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center}
+    .hero h1{font-family: Montserrat, Poppins, sans-serif; font-weight:800; line-height:1.05; font-size: clamp(36px, 4.5vw, 62px); margin:16px 0}
+    .hero p{font-size: clamp(15px, 1.5vw, 18px); color:var(--muted)}
+    .hero-card{background: linear-gradient(175deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08); padding:22px; border-radius:var(--radius-lg)}
+    .hero-badges{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0 24px}
+    .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+
+    /* HIGHLIGHTS */
+    .section{padding:64px 0}
+    .section h2{font-family: Montserrat, Poppins; font-weight:800; font-size: clamp(26px, 3vw, 40px); margin:0 0 10px}
+    .section .sub{color:var(--muted); margin:0 0 26px}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .stat{background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03)); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding:20px; text-align:center}
+    .stat .num{font-size: clamp(26px,3vw,36px); font-weight:800; font-family: Montserrat}
+    .stat .label{color:var(--muted); font-size:13px}
+
+    /* CAROUSEL */
+    .carousel{position:relative; overflow:hidden; border-radius:var(--radius); border:1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.03)}
+    .carousel-track{display:flex; transition: transform .6s ease}
+    .slide{min-width:100%; padding:26px}
+    .slide h3{margin:0 0 8px}
+    .carousel-controls{position:absolute; inset:0; display:flex; align-items:center; justify-content:space-between; pointer-events:none}
+    .car-btn{pointer-events:auto; background:rgba(0,0,0,.45); border:1px solid rgba(255,255,255,.2); width:42px; height:42px; border-radius:50%; display:grid; place-items:center; margin:0 8px}
+    .car-btn:hover{background:rgba(0,0,0,.65)}
+
+    /* CARDS GRID */
+    .grid{display:grid;gap:16px}
+    .grid.cols-3{grid-template-columns: repeat(3, 1fr)}
+    .grid.cols-4{grid-template-columns: repeat(4, 1fr)}
+    .card{background: linear-gradient(175deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding:18px; position:relative; overflow:hidden}
+    .card .title{font-weight:700}
+    .chips{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+    .chip{font-size:12px; padding:6px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.14); background:rgba(255,255,255,.04)}
+    details summary{cursor:pointer; list-style:none; font-weight:600; display:flex; align-items:center; gap:8px}
+    details summary::-webkit-details-marker{display:none}
+    details{border-top:1px dashed rgba(255,255,255,.14); margin-top:12px; padding-top:12px}
+
+    /* BRANDING STRIP */
+    .brand-strip{display:flex; gap:18px; flex-wrap:wrap; align-items:center}
+    .badge{padding:10px 14px; border-radius:12px; border:1px dashed rgba(255,255,255,.18); background: rgba(255,255,255,.04); font-weight:600;}
+
+    /* CONTACT */
+    .contact{display:grid; grid-template-columns: 1.3fr .7fr; gap:18px}
+    .contact .panel{background: linear-gradient(175deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding:20px}
+
+    /* FOOTER */
+    footer{padding:40px 0 80px; color:var(--muted)}
+    .socials{display:flex; gap:12px}
+    .icon-btn{display:inline-grid; place-items:center; width:42px; height:42px; border-radius:12px; border:1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.04); transition:.2s}
+    .icon-btn:hover{transform: translateY(-2px); border-color: var(--gold)}
+
+    /* UTIL */
+    .pill{display:inline-block; padding:6px 12px; border-radius:999px; font-weight:600; font-size:12px; letter-spacing:.2px; background: linear-gradient(90deg, rgba(244,192,38,.18), rgba(123,92,255,.18)); border:1px solid rgba(255,255,255,.08)}
+    .hl{color:var(--gold)}
+    .spacer{height:26px}
+
+    /* RESPONSIVE */
+    @media (max-width: 960px){
+      .hero .grid{grid-template-columns:1fr}
+      .stats{grid-template-columns: repeat(2,1fr)}
+      .grid.cols-3{grid-template-columns: 1fr 1fr}
+      .grid.cols-4{grid-template-columns: 1fr 1fr}
+      .contact{grid-template-columns:1fr}
+    }
+    @media (max-width: 560px){
+      .stats{grid-template-columns:1fr}
+      .grid.cols-3, .grid.cols-4{grid-template-columns:1fr}
+    }
+
+    /* Simple reveal on scroll */
+    [data-reveal]{opacity:0; transform: translateY(10px); transition:.6s ease}
+    [data-reveal].visible{opacity:1; transform:none}
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <div class="nav">
+    <div class="container nav-inner">
+      <div style="display:flex;align-items:center;gap:10px">
+        <img src="logo.png" alt="RDV Logo" width="40" height="40" style="border-radius:10px"/>
+        <strong>Rendezvous 2025 • IIT Delhi</strong>
+      </div>
+      <div class="links">
+        <a href="#highlights">Highlights</a>
+        <a href="#opportunities">Opportunities</a>
+        <a href="#branding">Branding</a>
+        <a href="#why">Why RDV</a>
+        <a href="#contact" class="pill">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container grid">
+      <div>
+        <span class="tag">Golden Jubilee • 50th Edition • Sept 27–30</span>
+        <h1>Asia’s Iconic College Cultural Festival <span class="hl">Rendezvous 2025</span></h1>
+        <p>Hosted by IIT Delhi, RDV brings together <strong>160,000+ attendees</strong> from <strong>1600+ institutions</strong> with 300+ events over 4 power‑packed days — a powerful platform for brands to connect with India’s most dynamic youth.</p>
+        <div class="hero-badges">
+          <span class="pill">20k+ IIT Crowd</span>
+          <span class="pill">65k+ Participants</span>
+          <span class="pill">200+ Artists</span>
+          <span class="pill">5,00,000+ Digital Reach</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#opportunities" class="btn">View Sponsorships</a>
+          <a href="RDV'25 PROPOSAL.pdf" class="btn btn-outline" download>Download Proposal PDF</a>
+        </div>
+      </div>
+      <div class="hero-card shadow" aria-label="Quick facts">
+        <div class="brand-strip">
+          <div class="badge">Concert Pronites</div>
+          <div class="badge">Campus‑wide Branding</div>
+          <div class="badge">Influencer + CA Network</div>
+          <div class="badge">Workshops &amp; Talks</div>
+          <div class="badge">Startup Expo</div>
+          <div class="badge">CSR &amp; Education</div>
+        </div>
+        <div class="spacer"></div>
+        <div class="grid" style="grid-template-columns: 1fr 1fr; gap:12px">
+          <div class="card">
+            <div class="title">Custom Brand Experiences</div>
+            <div class="chips">
+              <span class="chip">Experience Zones</span>
+              <span class="chip">Live Launches</span>
+              <span class="chip">Stage Presence</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">Hybrid Promotions</div>
+            <div class="chips">
+              <span class="chip">Instagram</span>
+              <span class="chip">LinkedIn</span>
+              <span class="chip">On‑Ground</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">Thought Leadership</div>
+            <div class="chips">
+              <span class="chip">Leadership Dialogues</span>
+              <span class="chip">Speaker Slots</span>
+              <span class="chip">Workshops</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">Headline Performances</div>
+            <div class="chips">
+              <span class="chip">Artist Pronites</span>
+              <span class="chip">Naming Rights</span>
+              <span class="chip">TVC on Stage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HIGHLIGHTS / STATS -->
+  <section id="highlights" class="section">
+    <div class="container">
+      <h2>RDV in Numbers</h2>
+      <p class="sub">Unmatched scale, credibility and youth influence every year.</p>
+      <div class="stats">
+        <div class="stat shadow" data-reveal>
+          <div class="num" data-counter="160000">0</div>
+          <div class="label">Total Footfall</div>
+        </div>
+        <div class="stat shadow" data-reveal>
+          <div class="num" data-counter="65000">0</div>
+          <div class="label">Participants</div>
+        </div>
+        <div class="stat shadow" data-reveal>
+          <div class="num" data-counter="200">0</div>
+          <div class="label">Artists &amp; Guests</div>
+        </div>
+        <div class="stat shadow" data-reveal>
+          <div class="num" data-counter="500000">0</div>
+          <div class="label">Unique Users Reached</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTISTS / INFLUENCERS CAROUSEL -->
+  <section class="section">
+    <div class="container">
+      <h2>Flagship Performances &amp; Influencers</h2>
+      <p class="sub">Headline acts and creators who power discoverability and buzz.</p>
+      <div class="carousel shadow" id="carousel">
+        <div class="carousel-track" id="track">
+          <div class="slide">
+            <h3>Artist Pronites</h3>
+            <p>Icons through the years: Sonu Nigam, Farhan Akhtar, Shankar‑Ehsaan‑Loy, Sunidhi Chauhan, Vishal‑Shekhar and more.</p>
+            <div class="chips">
+              <span class="chip">20k+ per night</span>
+              <span class="chip">Stage Branding</span>
+              <span class="chip">TVC on Big Screen</span>
+            </div>
+          </div>
+          <div class="slide">
+            <h3>Influencer Marketing</h3>
+            <p>20+ creators across YouTube, Instagram &amp; Gaming. Past shout‑outs from Ankur Warikoo, Technical Guruji, Mortal and more.</p>
+            <div class="chips">
+              <span class="chip">Shout‑outs</span>
+              <span class="chip">Gifting</span>
+              <span class="chip">Branded Reels</span>
+            </div>
+          </div>
+          <div class="slide">
+            <h3>Speaker Sessions</h3>
+            <p>Thought leaders and executives in dialogue with students — ideal for positioning and recruitment interest.</p>
+            <div class="chips">
+              <span class="chip">2,000+ capacity</span>
+              <span class="chip">Product Mentions</span>
+              <span class="chip">Custom Themes</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="car-btn" aria-label="Prev" id="prev">◀</button>
+          <button class="car-btn" aria-label="Next" id="next">▶</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPPORTUNITIES / SECTORS -->
+  <section id="opportunities" class="section">
+    <div class="container">
+      <h2>Collaboration Opportunities</h2>
+      <p class="sub">Pick a lane — or mix &amp; match — to craft a campaign that delivers.</p>
+      <div class="grid cols-3">
+        <div class="card shadow" data-reveal>
+          <div class="title">Concerts &amp; Live Stage</div>
+          <div class="chips"><span class="chip">Pronites</span><span class="chip">Live Stage</span><span class="chip">Naming Rights</span></div>
+          <details>
+            <summary>Deliverables</summary>
+            <ul>
+              <li>Logo on truss, stage backdrops &amp; screens</li>
+              <li>15‑min stage slot + anchor mentions</li>
+              <li>Sampling, influencer gifting, VIP access</li>
+            </ul>
+          </details>
+        </div>
+        <div class="card shadow" data-reveal>
+          <div class="title">Lifestyle &amp; Youth</div>
+          <div class="chips"><span class="chip">Fashion</span><span class="chip">Music</span><span class="chip">Comedy</span></div>
+          <details>
+            <summary>Deliverables</summary>
+            <ul>
+              <li>Theme customization for fashion shows</li>
+              <li>Prom night integrations &amp; sign‑up funnels</li>
+              <li>Content creation with creators &amp; judges</li>
+            </ul>
+          </details>
+        </div>
+        <div class="card shadow" data-reveal>
+          <div class="title">Gaming &amp; Esports</div>
+          <div class="chips"><span class="chip">BGMI</span><span class="chip">Valorant</span><span class="chip">FIFA</span></div>
+          <details>
+            <summary>Deliverables</summary>
+            <ul>
+              <li>Lounges &amp; tournaments powered by your gear</li>
+              <li>Pro gamer meetups, shout‑outs &amp; prizes</li>
+              <li>Hands‑on product trials</li>
+            </ul>
+          </details>
+        </div>
+        <div class="card shadow" data-reveal>
+          <div class="title">Finance &amp; Business</div>
+          <div class="chips"><span class="chip">Dalal Street</span><span class="chip">Biz Cases</span><span class="chip">Startup Expo</span></div>
+          <details>
+            <summary>Deliverables</summary>
+            <ul>
+              <li>Mock trading on your platform (opt‑in signups)</li>
+              <li>Case themes from real challenges</li>
+              <li>Investor showcases &amp; funding frenzy</li>
+            </ul>
+          </details>
+        </div>
+        <div class="card shadow" data-reveal>
+          <div class="title">Auto &amp; Electronics</div>
+          <div class="chips"><span class="chip">Stunt Shows</span><span class="chip">Test Drives</span><span class="chip">Film‑Making</span></div>
+          <details>
+            <summary>Deliverables</summary>
+            <ul>
+              <li>Branded stunt arena &amp; safety branding</li>
+              <li>Campus test‑drive lane + booking booth</li>
+              <li>Device trials, b‑roll competition, product videos</li>
+            </ul>
+          </details>
+        </div>
+        <div class="card shadow" data-reveal>
+          <div class="title">CSR &amp; Education</div>
+          <div class="chips"><span class="chip">Zero‑Waste</span><span class="chip">Blood Connect</span><span class="chip">School Outreach</span></div>
+          <details>
+            <summary>Deliverables</summary>
+            <ul>
+              <li>Tree plantations &amp; incentives</li>
+              <li>Blood donation drives &amp; awareness</li>
+              <li>Education campaigns with NSS</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDING OPTIONS -->
+  <section id="branding" class="section">
+    <div class="container">
+      <h2>Branding Options</h2>
+      <p class="sub">360° visibility: campus, digital, ambassadors, media and merchandise.</p>
+      <div class="grid cols-4">
+        <div class="card shadow" data-reveal>
+          <div class="title">Campus Locations</div>
+          <p class="muted">Wind‑T &amp; LHC premium zones, balloons, passes, collateral.</p>
+        </div>
+        <div class="card shadow" data-reveal>
+          <div class="title">Campus Ambassadors</div>
+          <p class="muted">1200+ institutes, targeted content &amp; conversion challenges.</p>
+        </div>
+        <div class="card shadow" data-reveal>
+          <div class="title">Website &amp; Social</div>
+          <p class="muted">Clickable logos, co‑branded reels, IITD mailers.</p>
+        </div>
+        <div class="card shadow" data-reveal>
+          <div class="title">Premium Merch</div>
+          <p class="muted">Co‑branded tees, badges, VIP kits for ambassadors &amp; winners.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY Collaborate With RDV -->
+  <section id="why" class="section">
+    <div class="container">
+      <h2>Why Collaborate With Rendezvous 2025</h2>
+      <p class="sub">From unmatched scale to curated experiences — built to meet brand KPIs.</p>
+      <div class="grid cols-3">
+        <div class="card shadow" data-reveal>
+          <div class="title">Unmatched Scale &amp; Influence</div>
+          <ul>
+            <li>300+ cultural &amp; competitive events</li>
+            <li>4 days, 160k+ on‑ground audience</li>
+            <li>360° reach: campus + digital + media</li>
+          </ul>
+        </div>
+        <div class="card shadow" data-reveal>
+          <div class="title">Custom‑Tailored Experiences</div>
+          <ul>
+            <li>Curated zones &amp; live launches</li>
+            <li>Speaker slots &amp; workshops</li>
+            <li>Influencer + CA programs</li>
+          </ul>
+        </div>
+        <div class="card shadow" data-reveal>
+          <div class="title">Hybrid Promotions</div>
+          <ul>
+            <li>IG • LinkedIn • College networks</li>
+            <li>Campus‑wide installations</li>
+            <li>Naming rights &amp; stage presence</li>
+          </ul>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="grid cols-3">
+        <div class="card shadow" data-reveal>
+          <div class="title">Curated Associations</div>
+          <ul>
+            <li>Empowering Encounters — leadership dialogues</li>
+            <li>Startup Expo — innovation &amp; VC connect</li>
+            <li>Insightful Minds — talks &amp; debates</li>
+          </ul>
+        </div>
+        <div class="card shadow" data-reveal>
+          <div class="title">Artist Pronites</div>
+          <ul>
+            <li>Be the face behind star nights</li>
+            <li>Prime‑time visibility &amp; shout‑outs</li>
+            <li>Integrated content &amp; giveaways</li>
+          </ul>
+        </div>
+        <div class="card shadow" data-reveal>
+          <div class="title">Measurement</div>
+          <ul>
+            <li>Sign‑ups, downloads, impressions</li>
+            <li>Traffic, trials, conversions</li>
+            <li>Post‑event reports &amp; creatives</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container contact">
+      <div class="panel shadow">
+        <h2>Let’s Build Your RDV’25 Presence</h2>
+        <p class="sub">Tell us your goals — branding, performance marketing, launches or talent — and we’ll craft the right association.</p>
+        <div class="grid" style="grid-template-columns: 1fr 1fr; gap:14px">
+          <div class="card">
+            <div class="title">Marketing Team Rendezvous</div>
+            <p class="muted">Collaboration Contacts</p>
+            <p>Sarthak Kachhawaha — CTM Marketing — 📞 9413146208</p>
+            <p>Kunal Aggarwal     — CTM Marketing — 📞 7605882154</p>
+            <p>Naman              — Coordinator   — 📞 9354969944</p>
+          </div>
+          <div class="card">
+            <div class="title">Marketing Team Rendezvous</div>
+            <p class="muted">Collaboration Contact</p>
+            <p>Sarthak Kachhawaha — CTM Marketing — 📞 9413146208</p>
+            <p>Kunal Aggarwal     — CTM Marketing — 📞 7605882154</p>
+            <p>Naman              — Coordinator   — 📞 9354969944</p>
+          </div>
+        </div>
+        <div class="spacer">
+        </div> 
+        <div class="hero-cta"> 
+          <a href="RDV'25 PROPOSAL.pdf" class="btn btn-outline" download>Download Proposal PDF</a> 
+        </div>
+        </div>
+      <div class="panel shadow">
+        <h3 style="margin-top:0">Stay Connected</h3>
+        <p class="muted">Follow RDV for line‑ups, announcements and highlights.</p>
+        <div class="socials">
+          <a class="icon-btn" href="https://instagram.com/rendezvous.iitd/" target="_blank" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5z" stroke="currentColor" opacity=".4"/><path d="M12 16a4 4 0 100-8 4 4 0 000 8z" stroke="currentColor"/><circle cx="18" cy="6" r="1.2" fill="currentColor"/></svg>
+          </a>
+          <a class="icon-btn" href="https://linkedin.com/company/rendezvous-iitd/" target="_blank" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" opacity=".4"/><path d="M8 17V10" stroke="currentColor"/><circle cx="8" cy="7" r="1.2" fill="currentColor"/><path d="M12 17v-3.5a2.5 2.5 0 115 0V17" stroke="currentColor"/></svg>
+          </a>
+          <a class="icon-btn" href="#" aria-label="Website">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" opacity=".4"/><path d="M3 12h18M12 3c3 4 3 14 0 18M12 3c-3 4-3 14 0 18" stroke="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  <section id="email" class="panel shadow" style="text-align:center; padding:40px 20px;">
+  <h2 style="margin-bottom:10px; font-size:28px; color:var(--gold);">
+    Contact Email
+  </h2>
+  <p class="muted" style="margin-bottom:15px; font-size:16px;">
+    For sponsorship enquiries, reach us at
+  </p>
+  <p style="font-size:20px; font-weight:700; color:#fff; background:var(--gold); 
+            display:inline-block; padding:10px 20px; border-radius:8px;">
+    naman@rdv-iitd.org
+  </p>
+</section>
+  <footer>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <div style="display:flex;align-items:center;gap:10px">
+        <img src="logo.png" alt="RDV Logo" width="28" height="28" style="border-radius:8px"/>
+        <span>© Rendezvous 2025 • IIT Delhi</span>
+      </div>
+      <div>
+        <span class="muted">Designed for collaboration preview • RDV IITD</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for in‑page anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id=a.getAttribute('href');
+        if(id.length>1){
+          e.preventDefault();
+          document.querySelector(id)?.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      })
+    })
+
+    // Reveal on scroll
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{ if(entry.isIntersecting){ entry.target.classList.add('visible'); } });
+    },{threshold:.15})
+    document.querySelectorAll('[data-reveal]').forEach(el=>observer.observe(el))
+
+    // Animated counters
+    function animateCounter(el){
+      const target = +el.dataset.counter || 0;
+      let current = 0;
+      const duration = 1400; // ms
+      const start = performance.now();
+      function tick(now){
+        const p = Math.min(1, (now-start)/duration);
+        current = Math.floor(target * (0.2 + 0.8*Math.pow(p, 1.8)));
+        el.textContent = current.toLocaleString('en-IN');
+        if(p < 1) requestAnimationFrame(tick); else el.textContent = target.toLocaleString('en-IN');
+      }
+      requestAnimationFrame(tick);
+    }
+    const statEls = document.querySelectorAll('[data-counter]');
+    const statObs = new IntersectionObserver((entries)=>{
+      entries.forEach(en=>{ if(en.isIntersecting){ animateCounter(en.target); statObs.unobserve(en.target); } })
+    },{threshold:.6})
+    statEls.forEach(el=>statObs.observe(el))
+
+    // Simple carousel
+    const track = document.getElementById('track');
+    const slides = Array.from(track.children);
+    let index = 0;
+    function go(i){ index=(i+slides.length)%slides.length; track.style.transform = `translateX(-${index*100}%)`; }
+    document.getElementById('prev').addEventListener('click',()=>go(index-1));
+    document.getElementById('next').addEventListener('click',()=>go(index+1));
+    setInterval(()=>go(index+1), 6000);
+  </script>
+</body>
+</html>
